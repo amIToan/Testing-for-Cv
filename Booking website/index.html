@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="booking, travelling the world, eating">
+  <meta name="keyword" content="HTML, CSS, Javascript">
+  <meta name="description" content="Free Travel">
+  <link rel="stylesheet" href="bk.css">
+  <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Travelling</title>
+</head>
+<body>
+  <header class="bk-header">
+    <div class="container">
+      <div class="col1"><span>Booking</span><span>.com</span></div>
+      <div class="col2">
+          <a href="">VND<span class="tooltip">Choose your currency</span></a>
+          <a href=""><i class="fas fa-globe-asia"></i><span class="tooltip">Choose your language</span></a>
+          <a href=""><i class="far fa-question-circle"></i><span class="tooltip">Contact Customer Service</span></a>
+          <a href="">List your property</a></li>
+          <a href="">Register</a></li>
+          <a href="">Sign in</a></li>
+      </div>
+    </div>
+    <div class="methods">
+      <ul>
+        <li><a href=""><i class="fas fa-procedures"></i>Stay</a></li>
+        <li><a href=""><i class="fas fa-fighter-jet"></i>flights</a></li>
+        <li><a href=""><i class="fas fa-hotel"></i>Flights+Hotel</a></li>
+        <li><a href=""><i class="fas fa-car"></i>Car rentals</a></li>
+        <li><a href=""><i class="fas fa-map-marked"></i>Attractions</a></li>
+        <li><a href=""><i class="fas fa-taxi"></i>Airport taxis</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="booking">
+    <h1>Find deals on hotels, homes and much more...</h1>
+    <p>From cosy country homes to funky city flats.</p>
+      <form action="" class="grid-box" method="post">
+     <div id="destination">
+      <i class="fas fa-procedures"></i>
+      <input type="text" placeholder="Where are you going?" style="width: 100%;">
+     </div>
+      <div id="collect"><i class="far fa-calendar"></i>
+        <span>Check-in</span> - <span>check-out</span>
+        </div>
+      <div id="item1"><i class="far fa-calendar"></i> Check-in</div>
+      <div id="item2"><i class="fas fa-calendar-week"></i>  Check-out</div>
+      <div id="item3">
+        <div id="drop-btn">
+         <i class="fas fa-user-friends"></i>
+         <span id="replace-1"></span> • <span id="replace-2"></span> • <span id="replace-3"> </span>
+         <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="drop-bar" style="display: none">
+          <div id="adults">
+            <div>Adults</div>
+            <div>
+              <button id='increbtn'><i class="fas fa-plus"></i></button>
+              <span id='value'>1</span>
+              <button id='decrebtn'><i class="fas fa-minus" ></i></button>
+            </div>
+          </div>
+          <div id="children">
+            <div>
+              <h3>Children</h3>
+              <p>Ages 0 - 17</p>
+            </div>
+            <div>
+              <button id='increbtn1'><i class="fas fa-plus"></i></button>
+              <span id='value1'>0</span>
+              <button id='decrebtn-0' disabled><i class="fas fa-minus" ></i></button>
+            </div>
+          </div>
+          <div id="box-ages">
+            <!-- <div class="box-cover">
+            <select name="ageoptions" >
+            <option value="1">1 years old</option>
+            <option value="2">2 years old</option>
+            <option value="3">3 years old</option>
+            <option value="4">4 years old</option>
+            <option value="5">5 years old</option>
+            <option value="6">6 years old</option>
+            <option value="7">7 years old</option>
+            <option value="8">8 years old</option>
+            <option value="9">9 years old</option>
+            <option value="10">10 years old</option>
+            <option value="11">11 years old</option>
+            <option value="12">12 years old</option>
+            <option value="13">13 years old</option>
+            <option value="14">14 years old</option>
+            <option value="15">15 years old</option>
+            <option value="16">16 years old</option>
+            <option value="17">17 years old</option>
+          </select>
+        </div> -->
+        </div>
+          <p id="para" style="padding-left: 0.5rem; display:none;"> To find you a place to stay that fits your entire group along with correct prices, we need to know how old your children will be at check-out</p>
+          <div id="room">
+            <div>Adults</div>
+            <div>
+              <button id='increbtn-2'><i class="fas fa-plus"></i></button>
+              <span id='value2'>1</span>
+              <button id='decrebtn-2' disabled><i class="fas fa-minus" ></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit">Search</button>
+      </form>
+    <p> <input type="checkbox" value=""> <span>I'm travelling for work</span></p>
+  </section>
+  <section id="animation">
+    <h1>Browse by property type</h1>
+    <div class="flex-1">
+    <div>
+      <img src="1.jpg" alt="anh loi">
+      <h4>Hotels</h4>
+      <p>31.456 hotels</p>
+    </div>
+    <div>
+      <img src="2.jpg" alt="anh loi">
+      <h4>Apartments</h4>
+      <p>43.356 hotels</p>
+    </div>
+    <div>
+      <img src="3.jpg" alt="anh loi">
+      <h4>Resorts</h4>
+      <p>54.982 hotels</p>
+    </div>
+    <div>
+      <img src="4.jpg" alt="anh loi">
+      <h4>Villas</h4>
+      <p>71.988 hotels</p>
+    </div>
+    <div>
+      <img src="5.jpg" alt="anh loi">
+      <h4>Cabins</h4>
+      <p>50.098 hotels</p>
+    </div>
+    <div>
+      <img src="6.jpg" alt="anh loi">
+      <h4>Cottages</h4>
+      <p>15.342 hotels</p>
+    </div>
+    <div>
+      <img src="7.jpg" alt="anh loi">
+      <h4>Glamping</h4>
+      <p>21.980 hotels</p>
+    </div>
+    <div>
+      <img src="8.jpg" alt="anh loi">
+      <h4>Green houses</h4>
+      <p>31.098 hotels</p>
+    </div>
+    <div>
+      <img src="9.jpg" alt="anh loi">
+      <h4>Hostels</h4>
+      <p>90.4354 hotels</p>
+    </div>
+    <div>
+      <img src="10.jpg" alt="anh loi">
+      <h4>Guest houses</h4>
+      <p>65.456 hotels</p>
+    </div>
+    <div>
+      <img src="11.jpg" alt="anh loi">
+      <h4>Motels</h4>
+      <p>31.456 hotels</p>
+    </div>
+    <div>
+      <img src="12.jpg" alt="anh loi">
+      <h4>Services</h4>
+      <p>31.456 hotels</p>
+    </div>
+    <div>
+      <img src="13.jpg" alt="anh loi">
+      <h4>Holiday Homes</h4>
+      <p>31.456 hotels</p>
+    </div>
+    <div>
+      <img src="14.jpg" alt="anh loi">
+      <h4>BBQs</h4>
+      <p>31.456 hotels</p>
+    </div>
+    <div>
+      <img src="15.jpg" alt="anh loi">
+      <h4>Roykans</h4>
+      <p>31.456 hotels</p>
+    </div>
+  </div>
+  </section>
+<section class="grid-img">
+  <h1>Explore many famous destinations</h1>
+  <div class="flex-arranging">
+    <div class="grid-child">
+      <img src="hoguom.jpg" alt="loading failed">
+      <div class="transition">
+      <h2>Hà Nội Capital</h2>
+      <p>5.098 properties</p>
+      </div>
+    </div>
+    <div class="grid-child">
+      <img src="saigon.jpg" alt="loading failed">
+      <div class="transition">
+      <h2>Hồ Chí Minh City</h2>
+      <p>6.987 properties</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex-arranging1">
+    <div class="grid-child">
+      <img src="singapore.jpg" alt="loading failed">
+      <div class="transition">
+      <h2>Singapore Capital</h2>
+      <p>8.967 properties</p>
+      </div>
+    </div>
+    <div class="grid-child">
+      <img src="hoian.jpg" alt="loading failed">
+      <div class="transition">
+      <h2>Hội An ancient Town</h2>
+      <p>7.789 properties</p>
+      </div>
+    </div>
+    <div class="grid-child">
+      <img src="bangkok.jpg" alt="loading failed">
+      <div class="transition">
+      <h2>Bangkok, Thái Lan</h2>
+      <p>9.123 properties</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section 3 -->
+<section class="grid-img">
+  <h1>Get inspiration for your next trip</h1>
+  <div class="flex-arranging">
+    <div class="grid-child">
+      <img src="south korea.jpg" alt="loading failed">
+      <div class="transition">
+      <h4>Destination Inspration</h4>
+      <p>Mouthh-watering food, dazzling nightlife and shopping too rival Fifth Avenue</p>
+      </div>
+    </div>
+    <div class="grid-child">
+      <img src="switerland.jpg" alt="loading failed">
+      <div class="transition">
+      <h4> Family-friendly summer hikes in the Alps</h4>
+      <p>Discover snow-capped summertime wilderness on a family-friendly hiking adventure.</p>
+      </div>
+    </div>
+    <div class="grid-child">
+      <img src="eight august.jpg" alt="loading failed">
+      <div class="transition">
+      <h4>Eight August vacation Destinations</h4>
+      <p>Head where the warm things are.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex-arranging">
+    <div class="grid-child">
+      <img src="us food.jpg" alt="loading failed">
+      <div class="transition">
+      <h4>The best Michellin-starred hotel restaurants</h4>
+      <p>Have an unforgettable dining experience wihtout leaving your hotel.</p>
+      </div>
+    </div>
+    <div class="grid-child">
+      <img src="michellin.jpg" alt="loading failed">
+      <div class="transition">
+      <h4>Affordable Michelin across the US.</h4>
+      <p>Follow your stomach round the country without having to splurge.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section 4 -->
+<section class="grid4">
+  <h1>Homes that Guests, Visitors love so much</h1>
+  <div class="flex-arranging1">
+    <div class="flex-section4">
+      <a href=""><img src="villa domina.jpg" alt="loading failed">
+      <div class="transition4">
+      <p>villa Domina</p>
+      <h4>Starting from VND 2,124,798</h4>
+      <p><b><span class="box"> 9.5</span>
+      <span>Exceptional</span></b>
+      <span>990 reviews</span></p>
+    </div></a>
+    </div>
+    <div class="flex-section4">
+      <a href=""><img src="furniture.jpg" alt="loading failed">
+      <div class="transition4">
+        <p>Sugar Loft Apartments</p>
+        <h4>Starting from VND 1,124,798</h4>
+        <p><b><span class="box"> 9.0</span>
+        <span>Super</span></b>
+        <span>318 reviews</span></p>
+      </div></a>
+    </div>
+    <div class="flex-section4">
+      <a href=""><img src="furniture2.jpg" alt="loading failed">
+      <div class="transition4">
+        <p>Vita Apartments</p>
+        <h4>Starting from VND 3,124,798</h4>
+        <p><b><span class="box"> 9.0</span>
+        <span>Super</span></b>
+        <span>500 reviews</span></p>
+      </div></a>
+    </div>
+    <div class="flex-section4">
+      <a href=""><img src="furniture3.jpg" alt="loading failed">
+      <div class="transition4">
+        <p>Lake-Viewing Apartments</p>
+        <h4>Starting from VND 5,124,798</h4>
+        <p><b><span class="box"> 9.0</span>
+        <span>Super</span></b>
+        <span>993 reviews</span></p>
+      </div></a>
+    </div>
+  </div>
+  </div>
+</section>
+<section class="hidden-cover">
+  <button id="backwards"><i class="fas fa-arrow-circle-left"></i></button>
+<div id="animation1">
+  <div class="flex-2" id="last-one">
+    <div>
+      <img src="tamdao.jpg" alt="anh loi">
+      <h4>Green houses</h4>
+      <p>31.098 hotels</p>
+    </div>
+    <div>
+      <img src="cafecafao.jpg" alt="anh loi">
+      <h4>Hostels</h4>
+      <p>90.4354 hotels</p>
+    </div>
+    <div>
+      <img src="tangcao.jpg" alt="anh loi">
+      <h4>Guest houses</h4>
+      <p>65.456 hotels</p>
+    </div>
+    <div>
+      <img src="foafch.jpg" alt="anh loi">
+      <h4>Motels</h4>
+      <p>31.456 hotels</p>
+    </div>
+  </div>
+  <div class="flex-2">
+  <div>
+    <img src="dalt.jpg" alt="anh loi">
+    <h4>Hotels</h4>
+    <p>31.456 hotels</p>
+  </div>
+  <div>
+    <img src="nhatrang.jpg" alt="anh loi">
+    <h4>Apartments</h4>
+    <p>43.356 hotels</p>
+  </div>
+  <div>
+    <img src="nhatrang.jpg" alt="anh loi">
+    <h4>Apartments</h4>
+    <p>43.356 hotels</p>
+  </div>
+  <div>
+    <img src="chua chien.jpg" alt="anh loi">
+    <h4>Resorts</h4>
+    <p>54.982 hotels</p>
+  </div>
+  </div>
+  <div class="flex-2">
+  <div>
+    <img src="dnang.jpg" alt="anh loi">
+    <h4>Villas</h4>
+    <p>71.988 hotels</p>
+  </div>
+  <div>
+    <img src="khanhhoa.jpg" alt="anh loi">
+    <h4>Cabins</h4>
+    <p>50.098 hotels</p>
+  </div>
+  <div>
+    <img src="rsort.jpg" alt="anh loi">
+    <h4>Cottages</h4>
+    <p>15.342 hotels</p>
+  </div>
+  <div>
+    <img src="an choi.jpg" alt="anh loi">
+    <h4>Glamping</h4>
+    <p>21.980 hotels</p>
+  </div>
+</div>
+<div class="flex-2">
+  <div>
+    <img src="tamdao.jpg" alt="anh loi">
+    <h4>Green houses</h4>
+    <p>31.098 hotels</p>
+  </div>
+  <div>
+    <img src="cafecafao.jpg" alt="anh loi">
+    <h4>Hostels</h4>
+    <p>90.4354 hotels</p>
+  </div>
+  <div>
+    <img src="tangcao.jpg" alt="anh loi">
+    <h4>Guest houses</h4>
+    <p>65.456 hotels</p>
+  </div>
+  <div>
+    <img src="foafch.jpg" alt="anh loi">
+    <h4>Motels</h4>
+    <p>31.456 hotels</p>
+  </div>
+</div>
+<div class="flex-2" id="first-one">
+<div>
+  <img src="dalt.jpg" alt="anh loi">
+  <h4>Hotels</h4>
+  <p>31.456 hotels</p>
+</div>
+<div>
+  <img src="nhatrang.jpg" alt="anh loi">
+  <h4>Apartments</h4>
+  <p>43.356 hotels</p>
+</div>
+<div>
+  <img src="nhatrang.jpg" alt="anh loi">
+  <h4>Apartments</h4>
+  <p>43.356 hotels</p>
+</div>
+<div>
+  <img src="chua chien.jpg" alt="anh loi">
+  <h4>Resorts</h4>
+  <p>54.982 hotels</p>
+</div>
+</div>
+</div>
+<button id="forwards"><i class="fas fa-arrow-circle-right"></i></button>
+</section>
+<!-- create Dots -->
+<div class="dots">
+    <span class="nodedots current-slide"></span>
+    <span class="nodedots"></span>
+    <span class="nodedots"></span>
+  </div>
+<section class="grid4">
+  <h1>Connecting with other travellers</h1>
+  <div class="flex-arranging1" style="justify-content: flex-start">
+    <div class="flex-section4" style ="flex-basis: 25%">
+      <a href=""><img src="vietnam traveller.jpg" alt="loading failed" style="width: 100%">
+      <div class="transition4" >
+      <h3>Viet Nam</h3>
+      <p>Travel Communities</p>
+      <p>117.764 people</p>
+    </div></a>
+    </div>
+    <div class="flex-section4" style ="flex-basis: 25%">
+      <a href=""><img src="Travel talk.jpg" alt="loading failed" style="width: 100%">
+      <div class="transition4">
+      <h3>Viet Nam</h3>
+      <p>Travel Communities</p>
+      <p>117.764 people</p>
+    </div></a>
+    </div>
+    <div class="flex-section4" style ="flex-basis: 25%">
+      <a href=""><img src="communities.png" alt="loading failed" style="width: 100%">
+      <div class="transition4">
+      <h3>Viet Nam</h3>
+      <p>Travel Communities</p>
+      <p>117.764 people</p>
+    </div></a>
+    </div>
+  </div>
+  <div class="create-row">
+  <div class="flex-5 current-slide">
+    <div class="children-flex-5">
+      <a href=""><img src="finaldanang.jpg" alt="failed">
+      <p>283 holiday rentals, 246 apartments, 48 serviced apartments, 17 homestays, 16 holiday homes</p></a>
+    </div>
+    <div class="children-flex-5">
+      <a href=""><img src="finalhue.jpg" alt="failed">
+      <p>283 holiday rentals, 246 apartments, 48 serviced apartments, 17 homestays, 16 holiday homes</p></a>
+    </div>
+    <div class="children-flex-5">
+      <a href=""><img src="finalnhatrang.jpg" alt="failed">
+      <p>283 holiday rentals, 246 apartments, 48 serviced apartments, 17 homestays, 16 holiday homes</p></a>
+    </div>
+    <div class="children-flex-5">
+      <a href=""><img src="finalphuquoc.jpg" alt="failed">
+      <p>283 holiday rentals, 246 apartments, 48 serviced apartments, 17 homestays, 16 holiday homes</p></a>
+    </div>
+  </div>
+  <div class="flex-5">
+    <div class="children-flex-5">
+      <a href=""><img src="finalphuquoc.jpg" alt="failed">
+      <p>283 holiday rentals, 246 apartments, 48 serviced apartments, 17 homestays, 16 holiday homes</p></a>
+    </div>
+    <div class="children-flex-5">
+      <a href=""><img src="finaldanang.jpg" alt="failed">
+      <p>283 holiday rentals, 246 apartments, 48 serviced apartments, 17 homestays, 16 holiday homes</p></a>
+    </div>
+    <div class="children-flex-5">
+      <a href=""><img src="finalhue.jpg" alt="failed">
+      <p>283 holiday rentals, 246 apartments, 48 serviced apartments, 17 homestays, 16 holiday homes</p></a>
+    </div>
+    <div class="children-flex-5">
+      <a href=""><img src="finalnhatrang.jpg" alt="failed">
+      <p>283 holiday rentals, 246 apartments, 48 serviced apartments, 17 homestays, 16 holiday homes</p></a>
+    </div>
+
+  </div>
+  <div class="flex-5">
+    <div class="children-flex-5">
+      <a href=""><img src="finalhue.jpg" alt="failed">
+      <p>283 holiday rentals, 246 apartments, 48 serviced apartments, 17 homestays, 16 holiday homes</p></a>
+    </div>
+    <div class="children-flex-5">
+      <a href=""><img src="finalnhatrang.jpg" alt="failed">
+      <p>283 holiday rentals, 246 apartments, 48 serviced apartments, 17 homestays, 16 holiday homes</p></a>
+    </div>
+    <div class="children-flex-5">
+      <a href=""><img src="finaldanang.jpg" alt="failed">
+      <p>283 holiday rentals, 246 apartments, 48 serviced apartments, 17 homestays, 16 holiday homes</p></a>
+    </div>
+    <div class="children-flex-5">
+      <a href=""><img src="finalphuquoc.jpg" alt="failed">
+      <p>283 holiday rentals, 246 apartments, 48 serviced apartments, 17 homestays, 16 holiday homes</p></a>
+    </div>
+  </div>
+  </div>
+  <button id="forwards-2"><i class="fas fa-arrow-circle-right"></i></button>
+  <button id="backwards-2" class="hidden"><i class="fas fa-arrow-circle-left"></i></button>
+  <div class="dots sub-dots">
+   <span class="nodedots current-slide" ></span>
+   <span class="nodedots"></span>
+   <span class="nodedots"></span>
+ </div>
+  </section>
+  <div class="list-of-des">
+    <h1>Destinations we love</h1>
+    <ul id="box-ul">
+      <li style ="background-color: #0071c2;">Regions</li>
+      <li>Cities</li>
+      <li>Places of interest</li>
+    </ul>
+    <div id="grid-array">
+    <div class="row-des">
+      <div class="column-des">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+      <div class="column-des">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+      <div class="column-des">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+      <div class="column-des">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+      <div class="column-des">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+    </div>
+    <div class="row-des visible">
+      <div class="column-des">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+      <div class="column-des">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+      <div class="column-des ">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+      <div class="column-des ">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+      <div class="column-des ">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+    </div>
+    <div class="row-des visible">
+      <div class="column-des">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+      <div class="column-des">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+      <div class="column-des">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+      <div class="column-des">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+      <div class="column-des">
+        <a href="#">
+          <p>Mykonos</p>
+          <p class="grey-color">1,453 properties</p>
+        </a>
+        <a href="#">
+          <p>Guernsey</p>
+          <p class="grey-color">61 properties</p>
+        </a>
+        <a href="#">
+          <p>Ras Ai Khaimah</p>
+          <p class="grey-color">1,14 properties</p>
+        </a>
+        <a href="#">
+          <p>Texel</p>
+          <p class="grey-color">413 properties</p>
+        </a>
+      </div>
+
+    </div>
+   </div>
+  </div>
+  <div class="list-of-des">
+    <h1>Discover</h1>
+    <div class="order-list">
+      <div><a href="">1</a></div>
+      <div><a href="">2</a></div>
+      <div><a href="">3</a></div>
+      <div><a href="">4</a></div>
+      <div><a href="">5</a></div>
+      <div><a href="">6</a></div>
+      <div><a href="">7</a></div>
+      <div><a href="">8</a></div>
+      <div><a href="">9</a></div>
+      <div><a href="">10</a></div>
+      <div><a href="">11</a></div>
+      <div><a href="">More communities</a></div>
+    </div>
+    <div class="footer-grid">
+    <div class="row-dis">
+      <a href="1">
+      <p class="text-flow">Enjoy relaxations,restaurants and shopping during your next trip in United State! </p>
+      <img src="/footer/United State.jpg" alt="failed">
+      <p>United State</p>
+      </a>
+      <a href="2">
+      <p class="text-flow">Enjoy old towns,scenery and shopping during your next trip in Italy! </p>
+      <img src="/footer/france.jpg" alt="failed">
+      <p>France</p>
+      </a>
+      <a href="3">
+      <p class="text-flow">Put tranquility,scenery and and old towns on your to-do list during your next trip in France! </p>
+      <img src="/footer/Italy.jpg" alt="failed">
+      <p>Italy</p>
+      </a>
+      <a href="4">
+      <p class="text-flow">Put tranquility,scenery and and old towns on your to-do list during your next trip in France! </p>
+      <img src="/footer/germany.jpg" alt="failed">
+      <p>Germany</p>
+      </a>
+      <a href="5">
+      <p class="text-flow">Don't miss out on Germany. Top spot on old towns, walking and city walks. </p>
+      <img src="/footer/spain.jpg" alt="failed">
+      <p>Spain</p>
+      </a>
+    </div>
+    <div class="row-dis ">
+      <a href="2">
+      <p class="text-flow">Enjoy old towns,scenery and shopping during your next trip in Italy! </p>
+      <img src="/footer/france.jpg" alt="failed">
+      <p>France</p>
+      </a>
+      <a href="1">
+      <p class="text-flow">Enjoy relaxations,restaurants and shopping during your next trip in United State! </p>
+      <img src="/footer/United State.jpg" alt="failed">
+      <p>United State</p>
+      </a>
+      <a href="3">
+      <p class="text-flow">Put tranquility,scenery and and old towns on your to-do list during your next trip in France! </p>
+      <img src="/footer/Italy.jpg" alt="failed">
+      <p>Italy</p>
+      </a>
+      <a href="5">
+      <p class="text-flow">Don't miss out on Germany. Top spot on old towns, walking and city walks. </p>
+      <img src="/footer/spain.jpg" alt="failed">
+      <p>Spain</p>
+      </a>
+      <a href="4">
+      <p class="text-flow">Put tranquility,scenery and and old towns on your to-do list during your next trip in France! </p>
+      <img src="/footer/germany.jpg" alt="failed">
+      <p>Germany</p>
+      </a>
+
+    </div>
+    <div class="row-dis ">
+      <a href="4">
+      <p class="text-flow">Put tranquility,scenery and and old towns on your to-do list during your next trip in France! </p>
+      <img src="/footer/germany.jpg" alt="failed">
+      <p>Germany</p>
+      </a>
+      <a href="2">
+      <p class="text-flow">Enjoy old towns,scenery and shopping during your next trip in Italy! </p>
+      <img src="/footer/france.jpg" alt="failed">
+      <p>France</p>
+      </a>
+      <a href="1">
+      <p class="text-flow">Enjoy relaxations,restaurants and shopping during your next trip in United State! </p>
+      <img src="/footer/United State.jpg" alt="failed">
+      <p>United State</p>
+      </a>
+      <a href="3">
+      <p class="text-flow">Put tranquility,scenery and and old towns on your to-do list during your next trip in France! </p>
+      <img src="/footer/Italy.jpg" alt="failed">
+      <p>Italy</p>
+      </a>
+      <a href="5">
+      <p class="text-flow">Don't miss out on Germany. Top spot on old towns, walking and city walks. </p>
+      <img src="/footer/spain.jpg" alt="failed">
+      <p>Spain</p>
+      </a>
+
+
+    </div>
+    <div class="row-dis ">
+      <a href="2">
+      <p class="text-flow">Enjoy old towns,scenery and shopping during your next trip in Italy! </p>
+      <img src="/footer/france.jpg" alt="failed">
+      <p>France</p>
+      </a>
+      <a href="1">
+      <p class="text-flow">Enjoy relaxations,restaurants and shopping during your next trip in United State! </p>
+      <img src="/footer/United State.jpg" alt="failed">
+      <p>United State</p>
+      </a>
+      <a href="3">
+      <p class="text-flow">Put tranquility,scenery and and old towns on your to-do list during your next trip in France! </p>
+      <img src="/footer/Italy.jpg" alt="failed">
+      <p>Italy</p>
+      </a>
+      <a href="5">
+      <p class="text-flow">Don't miss out on Germany. Top spot on old towns, walking and city walks. </p>
+      <img src="/footer/spain.jpg" alt="failed">
+      <p>Spain</p>
+      </a>
+      <a href="4">
+      <p class="text-flow">Put tranquility,scenery and and old towns on your to-do list during your next trip in France! </p>
+      <img src="/footer/germany.jpg" alt="failed">
+      <p>Germany</p>
+      </a>
+
+    </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="sub-footer">
+      <h1>Save time, save money!</h1>
+      <h3>Sign up and we'll send the best deals to you</h3>
+     <div>
+      <input type="text" value="" placeholder="Feed your email here" required>
+      <input type="submit" value="Subscribe">
+     </div>
+     <div>
+      <input type="checkbox" >
+      <p>Send me a link to get the FREE Booking.com app!</p>
+      </div>
+    </div>
+    <div class="sub-footer2">
+      <a href="">List your property</a>
+      <hr style="width: 100%; color: white; height:1px; margin-block: 1rem;">
+      <div><a href="">Mobile version</a>
+      <a href="">Your account</a>
+      <a href="">Make changes to your booking online</a>
+      <a href="">Contact Custumer Service</a>
+      <a href="">Become an affiliate</a>
+      <a href="">Booking.com for Business</a>
+    </div>
+    </div>
+    <p style="color: grey; font-size: 0.9rem;">Copyright © 1996–2021 Booking.com™. All rights reserved.
+    </p>
+    <p style="color: grey; font-size: 0.9rem">Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.
+    </p>
+    <div class="foot-note">
+      <img src="/logo/rentalcars.png" alt="failed">
+      <img src="/logo/opentable.png" alt="failed">
+      <img src="/logo/agoda.png" alt="failed">
+      <img src="/logo/kyaka.png" alt="failed">
+      <img src="/logo/preiceline.png" alt="failed">
+    </div>
+  </footer>
+  <script src="bookin.js"></script>
+</body>
+</html>
